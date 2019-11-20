@@ -20,12 +20,6 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
@@ -44,6 +38,11 @@ const useStyles = makeStyles(theme => ({
   link: {
     textDecoration: "none",
     color: 'inherit',
+  },
+  title: {
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
   },
 }));
   
